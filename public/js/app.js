@@ -10,7 +10,7 @@ let p6 = document.querySelector('.p6')
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
-    const location = search.value
+    const location = search.value.trim()
 
     p1.textContent = 'Loading...'
     p1.textContent = ''

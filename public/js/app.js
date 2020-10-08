@@ -1,6 +1,3 @@
-console.log('yps')
-
-
 
 const form = document.querySelector('.form1')
 const search = document.querySelector('input')

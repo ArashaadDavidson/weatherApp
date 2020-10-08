@@ -19,7 +19,7 @@ form.addEventListener('submit',(e)=>{
     p4.textContent = ''
     p5.textContent = ''
     p6.textContent = '' 
-    fetch(`http://localhost:3000/weather?address=${location}`).then((response)=>{
+    fetch(`/weather?address=${location}`).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
             p1.textContent = 'Error: '+data.error

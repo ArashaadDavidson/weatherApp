@@ -4,7 +4,7 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 const app = express() // using app will be like CALLING express
-
+const port = process.env.PORT || 3000
 //defining paths for Express config
 
 //path is a core node module that joins
@@ -110,8 +110,8 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log(__dirname)
-    console.log("Listening on port 3000")
+    console.log("Listening on port "+port)
 })
 
